@@ -17,3 +17,15 @@ questions = [
 ]
 # Runs the interview and gathers the responses.
 answers = prompt(questions) 
+
+
+
+if __name__ == "__main__":
+
+    # Takes the answers and stores them as an object
+    readme = Answers(answers["author"], 
+                     answers["contact"], 
+                     answers["title"], 
+                     answers["description"], 
+                     answers["installation"], 
+                     answers["license"])
