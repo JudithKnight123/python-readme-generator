@@ -20,7 +20,7 @@ answers = prompt(questions)
 
 # Modules
 from instructions import Answers #this imports the instructions.py file
-
+from file_operations import read_file, write_file
 
 if __name__ == "__main__":
 
@@ -31,3 +31,14 @@ if __name__ == "__main__":
                      answers["description"], 
                      answers["installation"], 
                      answers["license"])
+
+
+    # Defined the variables 
+    output_file = "README.md"  
+    collection = f"Name: {readme.author}, Contact: {readme.contact}, Title: {readme.title}, Description: {readme.description}, Installation: {readme.installation}, License: {readme.license}"
+    
+    # File operations
+    # Writes the README.md file with the readme object
+    write_file(output_file, collection )
+    # Print the content of the README.md file
+    print("File content:", read_file(output_file))  
