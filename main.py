@@ -1,8 +1,19 @@
 from InquirerPy import prompt
 
-# Get user input with Inquirer
+# Get user input with Inquirer - 
+# Shows what questions the program asks the user and saves their responses into a dictionary.
 questions = [
-    {"type": "input", "name": "name", "message": "What is your name?"},
-    {"type": "input", "name": "color", "message": "What is your favorite color?"},
+    {"type": "input", "name": "author", "message": "What is your name?"},
+    {"type": "input", "name": "contact", "message": "What is your email address?"},
+    {"type": "input", "name": "title", "message": "What is your project title?"},
+    {"type": "input", "name": "description", "message": "Please provide a description of your project."},
+    {"type": "input", "name": "installation", "message": "What are the installation instructions?"},
+    {
+        "type": "list",
+        "name": "license",
+        "message": "Please select a license:",
+        "choices": ["MIT", "Apache 2.0", "GPL 3.0", "BSD 3-Clause", "None"],
+    },
 ]
-answers = prompt(questions)
+# Runs the interview and gathers the responses.
+answers = prompt(questions) 
