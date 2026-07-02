@@ -18,7 +18,8 @@ questions = [
 # Runs the interview and gathers the responses.
 answers = prompt(questions) 
 
-
+# Modules
+from instructions import Answers #this imports the instructions.py file
 
 
 if __name__ == "__main__":
