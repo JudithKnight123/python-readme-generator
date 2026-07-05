@@ -34,7 +34,7 @@ if __name__ == "__main__":
 
 
     # Defined the variables 
-    output_file = "README.md"  
+    output_file = "README_to_file_test.md"  
     collection = f"Name: {readme.author}, Contact: {readme.contact}, Title: {readme.title}, Description: {readme.description}, Installation: {readme.installation}, License: {readme.license}"
     
     # File operations
